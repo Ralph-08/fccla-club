@@ -1,0 +1,105 @@
+@use "./partials/variables" as *;
+@use "./partials/mixins" as *;
+// @use "./partials/globals" as *;
+
+@font-face {
+    font-family: 'Nova';
+    src: url(/assets/fonts/NovaSquare-Regular.ttf) format(truetype);
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica';
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2rem;
+}
+nav,
+footer {
+    padding: 0 1rem;
+}
+
+.mobile-nav__menu {
+    width: 1.5rem;
+    cursor: pointer;
+    @include tablet {
+        display: none;
+    }
+}
+
+.nav {
+    background-color: $primary-red;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 1rem;
+    @include tablet {
+        padding: 0 24px;
+    }
+
+    &__list {
+        list-style: none;
+        padding-left: 0;
+
+        &--left {
+            margin: 0;
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            line-height: 20px;
+        }
+
+        &--right {
+            display: none;
+            @include tablet {
+                display: flex;
+                justify-content: space-between;
+                column-gap: 2rem;
+            }
+        }
+    }
+
+    &__link {
+        color: white;
+
+        &--current {
+            @include tablet {
+                border-bottom: 3px solid white;
+                padding-bottom: 12.5px;
+            }
+        }
+    }
+
+    &__logo {
+        font-size: 2rem;
+        color: white;
+        font-family: 'Nova';
+        margin: 0;
+        font-size: 28px;
+
+        &--helvetica {
+            font-family: 'Serif';
+            font-size: 20px;
+            margin: 0;
+            align-self: flex-end;
+        }
+    }
+}
+
+// .mobile-nav {
+//     background-color: lightcoral;
+
+//     &__list {
+
+//     }
+// }
+

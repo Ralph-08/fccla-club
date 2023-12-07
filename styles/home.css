@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "Nova";
+  src: url(/assets/fonts/NovaSquare-Regular.ttf) format(truetype);
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica";
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+nav,
+footer {
+  padding: 0 1rem;
+}
+
+.mobile-nav__menu {
+  width: 1.5rem;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .mobile-nav__menu {
+    display: none;
+  }
+}
+
+.nav {
+  background-color: #bd2a2a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 1rem;
+}
+@media (min-width: 768px) {
+  .nav {
+    padding: 0 24px;
+  }
+}
+.nav__list {
+  list-style: none;
+  padding-left: 0;
+}
+.nav__list--left {
+  margin: 0;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  line-height: 20px;
+}
+.nav__list--right {
+  display: none;
+}
+@media (min-width: 768px) {
+  .nav__list--right {
+    display: flex;
+    justify-content: space-between;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+}
+.nav__link {
+  color: white;
+}
+@media (min-width: 768px) {
+  .nav__link--current {
+    border-bottom: 3px solid white;
+    padding-bottom: 12.5px;
+  }
+}
+.nav__logo {
+  font-size: 2rem;
+  color: white;
+  font-family: "Nova";
+  margin: 0;
+  font-size: 28px;
+}
+.nav__logo--helvetica {
+  font-family: "Serif";
+  font-size: 20px;
+  margin: 0;
+  align-self: flex-end;
+}/*# sourceMappingURL=home.css.map */
