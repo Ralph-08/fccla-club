@@ -1,135 +1,48 @@
 @use "./partials/variables" as *;
 @use "./partials/mixins" as *;
-// @use "./partials/globals" as *;
+
 
 @font-face {
     font-family: 'Nova';
     src: url(/assets/fonts/NovaSquare-Regular.ttf) format(truetype);
 }
 
-html,
-body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Helvetica';
-}
+// html,
+// body {
+//     padding: 0;
+//     margin: 0;
+//     box-sizing: border-box;
+//     font-family: 'Helvetica';
+// }
 
-a {
-    text-decoration: none;
-}
+// a {
+//     text-decoration: none;
+// }
 
-h1 {
-    font-size: 2rem;
-}
-nav,
-footer {
-    padding: 0 1rem;
-}
+// h1 {
+//     font-size: 42px;
+//     @include tablet {
+//         font-size: 88px;
+//     }
+// }
+// h2 {
+//     font-size: 20px;
+//     @include mobile {
+//         font-size: 30px;
+//     }
+// }
+// p {
+//     font-size: .6rem;
+//     @include mobile {
+//         font-size: 1rem;
+//     }
+// }
+// nav,
+// footer {
+//     padding: 0 1rem;
+// }
 
-.mobile-nav__menu {
-    width: 1.5rem;
-    cursor: pointer;
-    @include tablet {
-        display: none;
-    }
-}
 
-.nav {
-    background-color: $primary-red;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 1rem;
-    @include tablet {
-        padding: 0 24px;
-    }
-
-    &__list {
-        list-style: none;
-        padding-left: 0;
-
-        &--left {
-            margin: 0;
-            margin-top: 10px;
-            display: flex;
-            flex-direction: column;
-            line-height: 20px;
-        }
-
-        &--right {
-            display: none;
-            @include tablet {
-                display: flex;
-                justify-content: space-between;
-                column-gap: 2rem;
-            }
-        }
-    }
-
-    &__link {
-        color: white;
-
-        &--current {
-            @include tablet {
-                border-bottom: 3px solid white;
-                padding-bottom: 12.5px;
-            }
-        }
-    }
-
-    &__logo {
-        font-size: 2rem;
-        color: white;
-        font-family: 'Nova';
-        margin: 0;
-        font-size: 28px;
-
-        &--helvetica {
-            font-family: 'Serif';
-            font-size: 20px;
-            margin: 0;
-            align-self: flex-end;
-        }
-    }
-}
-
-.mobile-nav {
-    display: none;
-    background-color: #35363a;
-
-    &__list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    &__item {
-        padding: 1rem 0;
-        width: 90%;
-        text-align: center;
-        border-bottom: 1px solid lightgrey;
-        
-        &:last-child {
-            border: none;
-        }
-    }
-
-    &__link {
-        color: white;
-    }
-}
-
-.mobile-nav--display {
-    display: block;
-    @include tablet {
-        display: none;
-    }
-}
 
 .hero {
     padding: 0 1rem;
@@ -141,24 +54,90 @@ footer {
     flex-direction: column;
     justify-content: center;
     @include tablet {
-        height: 25rem;
+        height: 30rem;
+        padding: 0 2rem;
     }
 
     &__header {
-        font-size: 3rem;
         margin: 0;
-        max-width: 573px;
+        max-width: 500px;
         @include tablet {
-            font-size: 64px;
-            width: 70%;
+            max-width: 715px;
+        }
+        @include desktop {
+            max-width: 800px;
         }
     }
 
     &__desc {
-        font-size: 12px;
         width: 50%;
+    }
+}
+
+.mission {
+    padding: 3rem 2rem 3rem;
+    line-height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 13rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__container {
+        background-color: $primary-red;
+        color: white;
+        font-size: 1rem;
+        line-height: 1rem;
+        padding: 2.5rem 1rem;
+        @include mobile {
+            width: 80%;
+            padding: 2.5rem;
+            box-shadow: .5rem 1rem 1rem #8b8b8b;
+            max-width: 478px;
+        }
+    }
+
+    &__header {
+        border-bottom: 2px solid #364259;
+        width: 90%;
+        padding-bottom: .5rem;
+        margin-top: 0;
+        margin-bottom: .5rem;
+    }
+}
+
+.about {
+    line-height: 1.5rem;
+    padding: 1rem;
+    background-color: #e3e8f1;
+    @include tablet {
+        padding: 2rem;
+        line-height: 1.8rem;
+    }
+
+    &__container {
         @include tablet {
-            font-size: 1.2rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+
+    &__header {
+        color: #364259;
+        margin: 2rem 0 1rem;
+        font-size: 30px;
+    }
+
+    &__text {
+        padding: .3rem 0;
+        color: #737373;
+        @include tablet {
+            width: 100%;
+            padding: .3rem 1rem;
         }
     }
 }
