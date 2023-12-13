@@ -25,15 +25,29 @@ h2 {
         font-size: 30px;
     }
 }
+
+.page-subheader {
+    font-size: 42px;
+    @include tablet {
+        font-size: 65px;
+    }
+}
+
 p {
     font-size: .6rem;
     @include mobile {
         font-size: 1rem;
     }
+    @include desktop {
+        font-size: 20px;
+    }
 }
 nav,
-footer {
+.footer {
     padding: 0 1rem;
+    @include desktop {
+        padding: 0 6rem;
+    }
 }
 
 .mobile-nav__menu {
@@ -53,6 +67,9 @@ footer {
     padding: 5px 1rem;
     @include tablet {
         padding: 0 2rem;
+    }
+    @include desktop {
+        padding: 0 6rem;
     }
 
     &__list {
@@ -153,6 +170,9 @@ footer {
             display: flex;
             justify-content: space-between;
             flex-direction: row;
+        }
+        @include desktop {
+            padding: 0 6rem;
         }
     }
 

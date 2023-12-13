@@ -1,47 +1,10 @@
 @use "./partials/variables" as *;
 @use "./partials/mixins" as *;
 
-
 @font-face {
     font-family: 'Nova';
     src: url(/assets/fonts/NovaSquare-Regular.ttf) format(truetype);
 }
-
-// html,
-// body {
-//     padding: 0;
-//     margin: 0;
-//     box-sizing: border-box;
-//     font-family: 'Helvetica';
-// }
-
-// a {
-//     text-decoration: none;
-// }
-
-// h1 {
-//     font-size: 42px;
-//     @include tablet {
-//         font-size: 88px;
-//     }
-// }
-// h2 {
-//     font-size: 20px;
-//     @include mobile {
-//         font-size: 30px;
-//     }
-// }
-// p {
-//     font-size: .6rem;
-//     @include mobile {
-//         font-size: 1rem;
-//     }
-// }
-// nav,
-// footer {
-//     padding: 0 1rem;
-// }
-
 
 
 .hero {
@@ -56,6 +19,9 @@
     @include tablet {
         height: 30rem;
         padding: 0 2rem;
+    }
+    @include desktop {
+        padding: 0 6rem;
     }
 
     &__header {
@@ -75,7 +41,7 @@
 }
 
 .mission {
-    padding: 3rem 2rem 3rem;
+    padding: 3rem 2rem;
     line-height: 1.5rem;
     display: flex;
     justify-content: center;
@@ -85,6 +51,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @include desktop {
+        padding: 5rem 2rem;
+    }
 
     &__container {
         background-color: $primary-red;
@@ -98,14 +67,40 @@
             box-shadow: .5rem 1rem 1rem #8b8b8b;
             max-width: 478px;
         }
+        @include desktop {
+            max-width: none;
+            width: 80%;
+            line-height: 2.5rem;
+            margin-top: 5rem;
+            box-shadow: none;
+        }
     }
 
     &__header {
         border-bottom: 2px solid #364259;
         width: 90%;
         padding-bottom: .5rem;
-        margin-top: 0;
+        margin: 0 auto;
         margin-bottom: .5rem;
+    }
+}
+
+.content {
+    padding: 1rem;
+    @include tablet {
+        padding: 1rem 2rem;
+    }
+    @include desktop {
+        padding: 4rem 6rem 7rem;
+    }
+
+    &__text {
+        line-height: 2rem;
+        @include desktop {
+            max-width: 1824px;
+            margin: 0 auto;
+        line-height: 2.5rem;
+        }
     }
 }
 
@@ -117,12 +112,18 @@
         padding: 2rem;
         line-height: 1.8rem;
     }
+    @include desktop {
+        padding: 2rem 6rem;
+    }
 
     &__container {
         @include tablet {
             display: flex;
             flex-direction: row;
             justify-content: center;
+        }
+        @include desktop {
+            justify-content: space-evenly;
         }
     }
 
@@ -138,6 +139,10 @@
         @include tablet {
             width: 100%;
             padding: .3rem 1rem;
+        }
+        @include desktop {
+            width: 50%;
+            line-height: 2.5rem;
         }
     }
 }
