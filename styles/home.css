@@ -104,7 +104,12 @@
   }
 }
 .content__text {
-  line-height: 2rem;
+  line-height: 1.5rem;
+}
+@media (min-width: 768px) {
+  .content__text {
+    line-height: 2rem;
+  }
 }
 @media (min-width: 1280px) {
   .content__text {

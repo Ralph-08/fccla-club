@@ -34,7 +34,7 @@ h2 {
 }
 
 p {
-    font-size: .6rem;
+    // font-size: .6rem;
     @include mobile {
         font-size: 1rem;
     }
@@ -154,6 +154,26 @@ nav,
     display: block;
     @include tablet {
         display: none;
+    }
+}
+
+.top-banner {
+    background: linear-gradient(0deg, #2c2c2c6f, #2c2c2c6f);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+    @include tablet {
+        height: 10rem;
+    }
+    @include desktop {
+        height: 15rem;
+    }
+
+    &__header {
+        color: white;
+        margin: 0;
     }
 }
 

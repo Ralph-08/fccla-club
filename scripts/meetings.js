@@ -1,8 +1,8 @@
 const meetings = [
-    {monthName: 'MAR', monthDay: '17-19', meetingTitle: 'State Leadership Conference', location: 'Athens, Georgia' },
-    {monthName: 'OCT', monthDay: '11', meetingTitle: 'Fall Leadership Rally', location: 'Georgia National Fairgrounds Perry, Georgia' },
-    {monthName: 'NOV', monthDay: '4', meetingTitle: 'Fall Festival at Honey Ridge Farms', location: 'Guyton, Georgia' },
-    {monthName: 'NOV', monthDay: '14-16', meetingTitle: 'Fall Leadership Conference', location: 'Camp John Hope Fort Valley' },
+    {monthName: 'AUG', monthDay: '25', meetingTitle: 'Shirt Voting Meeting', location: 'During School' },
+    {monthName: 'SEP', monthDay: '29', meetingTitle: 'Projects Meeting', location: 'During School' },
+    {monthName: 'NOV', monthDay: '17', meetingTitle: 'Christmas Plan-out', location: 'During School' },
+    {monthName: 'DEC', monthDay: '13', meetingTitle: 'Christmas Party', location: 'After School' },
 ];
 
 const meetingContainer = document.querySelector('.meeting');

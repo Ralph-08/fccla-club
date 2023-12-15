@@ -37,9 +37,6 @@ h2 {
   }
 }
 
-p {
-  font-size: 0.6rem;
-}
 @media (min-width: 375px) {
   p {
     font-size: 1rem;
@@ -167,6 +164,29 @@ nav,
   .mobile-nav--display {
     display: none;
   }
+}
+
+.top-banner {
+  background: linear-gradient(0deg, rgba(44, 44, 44, 0.4352941176), rgba(44, 44, 44, 0.4352941176));
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8rem;
+}
+@media (min-width: 768px) {
+  .top-banner {
+    height: 10rem;
+  }
+}
+@media (min-width: 1280px) {
+  .top-banner {
+    height: 15rem;
+  }
+}
+.top-banner__header {
+  color: white;
+  margin: 0;
 }
 
 .footer {

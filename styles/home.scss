@@ -95,7 +95,10 @@
     }
 
     &__text {
-        line-height: 2rem;
+        line-height: 1.5rem;
+        @include tablet {
+            line-height: 2rem;
+        }
         @include desktop {
             max-width: 1824px;
             margin: 0 auto;

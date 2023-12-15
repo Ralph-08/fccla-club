@@ -1,0 +1,93 @@
+@use "./partials/mixins" as *;
+
+.top-banner {
+    background: linear-gradient(0deg, #2c2c2c6f, #2c2c2c6f) ,url(../assets/images/bridge.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    background-color: #e3e8f1;
+    @include desktop {
+        padding: 5rem 0;
+    }
+
+    .event {
+        background-color: #e3e8f1;
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 2rem;
+        width: 100%;
+        padding: 3rem 1em;
+        row-gap: 2rem;
+        max-width: 475px;
+        flex-direction: column-reverse;
+        @include tablet {
+            flex-direction: row;
+        }
+        @include desktop {
+            max-width: none;
+            column-gap: 5rem;
+        }
+
+        &__card {
+            background-color: white;
+            width: 185px;
+            height: 245px;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: .5rem .5rem 1rem #898d95;
+            transition: border-radius .3s, box-shadow .3s;
+            
+            &:hover {
+            box-shadow: .8rem .8rem 1.2rem #4f5257;
+            border-radius: 0;
+            
+            }
+        }
+
+        &__date {
+            background-color: #35363a;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem 0;
+
+            &--day {
+                font-size: 2rem;
+            }
+
+            p, 
+            h3 {
+                margin: 0;
+            }
+        }
+
+        &__info {
+            padding: 1rem;
+        }
+
+        &__name {
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+        &__location {
+            color: #737373;;
+            font-size: .8rem;
+        }
+    }
+}
+
+.event__date--date {
+    font-size: 2rem;
+}
