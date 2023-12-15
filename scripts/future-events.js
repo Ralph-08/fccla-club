@@ -6,8 +6,6 @@ const events = [
     {monthName: 'JUN 29 -', monthDay: 'JUL 3', eventTitle: 'National Leadership Conference | 2024', location: 'Seattle, Washington' },
 ];
 
-
-
 const EventCard = (monthName, monthDay, eventTitle, location) => {
 return `
     <li class="event__card">
@@ -23,12 +21,6 @@ return `
 `;
 };
 
-// const loopArr = (arr) => {
-//     for (let i = 0; i < arr.length; i++) {
-//         EventCard(arr[i]);
-//     }
-// };
-
 const EventsPage = () => {
     return `
         ${EventCard(events[0].monthName, events[0].monthDay, events[0].eventTitle, events[0].location,)}
@@ -42,5 +34,4 @@ const EventsPage = () => {
 const eventContainer = document.querySelector('.event');
 eventContainer.innerHTML = EventsPage();
 
-// console.log(loopArr(events));
 console.log('hello')

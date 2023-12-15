@@ -1,0 +1,45 @@
+@use "./partials/mixins" as *;
+
+.top-banner {
+    background: linear-gradient(0deg, rgba(44, 44, 44, 0.4352941176), rgba(44, 44, 44, 0.4352941176)), url(../assets/images/helping.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 15rem;
+    @include tablet {
+        height: 20rem;
+    }
+    @include desktop {
+        height: 25rem;
+    }
+}
+
+.main {
+    padding: 1rem;
+    @include desktop {
+        padding: 2rem 0;
+    }
+
+    .card {
+        border-bottom: 1px solid #0654a123;
+        max-width: 768px;
+        margin: 0 auto;
+
+        &__header {
+            font-size: 1.2rem;
+        }
+
+        &__list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        &__item {
+            color: #737373;
+            &--bold {
+                font-weight: 700;
+                color: #364259;
+            }
+        }
+    }
+}

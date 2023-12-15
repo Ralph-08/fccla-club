@@ -9,6 +9,9 @@ body {
 a {
   text-decoration: none;
 }
+a:hover {
+  color: #97e8ff;
+}
 
 h1 {
   font-size: 42px;

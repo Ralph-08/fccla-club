@@ -1,0 +1,45 @@
+.top-banner {
+  background: linear-gradient(0deg, rgba(44, 44, 44, 0.4352941176), rgba(44, 44, 44, 0.4352941176)), url(../assets/images/helping.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 15rem;
+}
+@media (min-width: 768px) {
+  .top-banner {
+    height: 20rem;
+  }
+}
+@media (min-width: 1280px) {
+  .top-banner {
+    height: 25rem;
+  }
+}
+
+.main {
+  padding: 1rem;
+}
+@media (min-width: 1280px) {
+  .main {
+    padding: 2rem 0;
+  }
+}
+.main .card {
+  border-bottom: 1px solid rgba(6, 84, 161, 0.137254902);
+  max-width: 768px;
+  margin: 0 auto;
+}
+.main .card__header {
+  font-size: 1.2rem;
+}
+.main .card__list {
+  list-style: none;
+  padding-left: 0;
+}
+.main .card__item {
+  color: #737373;
+}
+.main .card__item--bold {
+  font-weight: 700;
+  color: #364259;
+}/*# sourceMappingURL=fund-raisers.css.map */

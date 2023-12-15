@@ -11,6 +11,10 @@ body {
 
 a {
     text-decoration: none;
+
+    &:hover {
+        color: #97e8ff;
+    }
 }
 
 h1 {
