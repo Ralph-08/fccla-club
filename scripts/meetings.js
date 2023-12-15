@@ -1,8 +1,8 @@
 const meetings = [
-    {monthName: 'AUG', monthDay: '25', meetingTitle: 'Shirt Voting Meeting', location: 'During School' },
-    {monthName: 'SEP', monthDay: '29', meetingTitle: 'Projects Meeting', location: 'During School' },
-    {monthName: 'NOV', monthDay: '17', meetingTitle: 'Christmas Plan-out', location: 'During School' },
-    {monthName: 'DEC', monthDay: '13', meetingTitle: 'Christmas Party', location: 'After School' },
+    {monthName: 'AUG', monthDay: '25', meetingTitle: 'Shirt Voting Meeting | 2023', location: 'During School | Room 615' },
+    {monthName: 'SEP', monthDay: '29', meetingTitle: 'Projects Meeting | 2023', location: 'During School | Room 615' },
+    {monthName: 'NOV', monthDay: '17', meetingTitle: 'Christmas Plan-out | 2023', location: 'During School | Room 615' },
+    {monthName: 'DEC', monthDay: '13', meetingTitle: 'Christmas Party | 2023', location: 'After School | Room 615' },
 ];
 
 const meetingContainer = document.querySelector('.meeting');

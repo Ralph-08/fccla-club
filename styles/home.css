@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Nova";
-  src: url(/assets/fonts/NovaSquare-Regular.ttf) format(truetype);
+  src: url(../assets/fonts/NovaSquare-Regular.ttf) format(truetype);
 }
 .hero {
   padding: 0 1rem;
-  background: linear-gradient(0deg, rgba(44, 44, 44, 0.4352941176), rgba(44, 44, 44, 0.4352941176)), url(/assets/images/hero.png);
+  background: linear-gradient(0deg, rgba(44, 44, 44, 0.4352941176), rgba(44, 44, 44, 0.4352941176)), url(../assets/images/hero.png);
   background-size: cover;
   color: white;
   height: 20rem;
