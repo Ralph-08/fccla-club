@@ -10,6 +10,7 @@
     justify-content: center;
     align-items: center;
     height: 8rem;
+    background-position: center;
     @include tablet {
         height: 10rem;
     }
@@ -20,6 +21,7 @@
     &__header {
         color: white;
         margin: 0;
+
     }
 }
 

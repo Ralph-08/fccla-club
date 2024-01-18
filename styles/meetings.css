@@ -246,13 +246,14 @@ nav,
 }
 .hero {
   padding: 0 1rem;
-  background: linear-gradient(0deg, rgba(44, 44, 44, 0.4352941176), rgba(44, 44, 44, 0.4352941176)), url(../assets/images/hero.png);
+  background: linear-gradient(0deg, rgba(44, 44, 44, 0.4352941176), rgba(44, 44, 44, 0.4352941176)), url(../assets/images/club-pic.png);
   background-size: cover;
   color: white;
   height: 20rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-position: center;
 }
 @media (min-width: 768px) {
   .hero {
@@ -418,6 +419,7 @@ nav,
   justify-content: center;
   align-items: center;
   height: 8rem;
+  background-position: center;
 }
 @media (min-width: 768px) {
   .top-banner {
