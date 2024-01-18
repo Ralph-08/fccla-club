@@ -3,6 +3,7 @@ const meetings = [
     {monthName: 'SEP', monthDay: '29', meetingTitle: 'Projects Meeting | 2023', location: 'During School | Room 615' },
     {monthName: 'NOV', monthDay: '17', meetingTitle: 'Christmas Plan-out | 2023', location: 'During School | Room 615' },
     {monthName: 'DEC', monthDay: '13', meetingTitle: 'Christmas Party | 2023', location: 'After School | Room 615' },
+    {monthName: 'JAN', monthDay: '19', meetingTitle: 'States Conference Meeting | 2024', location: 'During IF | Room 615' },
 ];
 
 const meetingContainer = document.querySelector('.meeting');
