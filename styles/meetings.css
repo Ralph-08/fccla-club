@@ -413,22 +413,24 @@ nav,
 }
 
 .top-banner {
-  background: linear-gradient(0deg, rgba(44, 44, 44, 0.4352941176), rgba(44, 44, 44, 0.4352941176)), url(../assets/images/savannah.jpeg);
+  background: linear-gradient(0deg, rgba(44, 44, 44, 0.4352941176), rgba(44, 44, 44, 0.4352941176)), url(../assets/images/se-pic.jpeg);
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 8rem;
   background-position: center;
+  height: 15rem;
 }
 @media (min-width: 768px) {
   .top-banner {
-    height: 10rem;
+    height: 20rem;
+    background-position: bottom -140px right 0.1px;
   }
 }
 @media (min-width: 1280px) {
   .top-banner {
-    height: 15rem;
+    background-position: bottom -200px right 0.1px;
+    height: 25rem;
   }
 }
 .top-banner__header {

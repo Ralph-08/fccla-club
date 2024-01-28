@@ -3,230 +3,241 @@
 
 html,
 body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Helvetica';
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica";
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 
-    &:hover {
-        color: #97e8ff;
-    }
+  &:hover {
+    color: #97e8ff;
+  }
 }
 
 h1 {
-    font-size: 42px;
-    @include tablet {
-        font-size: 88px;
-    }
+  font-size: 42px;
+  @include tablet {
+    font-size: 88px;
+  }
 }
 h2 {
-    font-size: 20px;
-    @include mobile {
-        font-size: 30px;
-    }
+  font-size: 20px;
+  @include mobile {
+    font-size: 30px;
+  }
 }
 
 .page-subheader {
-    font-size: 42px;
-    @include tablet {
-        font-size: 65px;
-    }
+  font-size: 42px;
+  @include tablet {
+    font-size: 65px;
+  }
 }
 
 p {
-    // font-size: .6rem;
-    @include mobile {
-        font-size: 1rem;
-    }
-    @include desktop {
-        font-size: 20px;
-    }
+  // font-size: .6rem;
+  @include mobile {
+    font-size: 1rem;
+  }
+  @include desktop {
+    font-size: 20px;
+  }
 }
 nav,
 .footer {
-    padding: 0 1rem;
-    @include desktop {
-        padding: 0 6rem;
-    }
+  padding: 0 1rem;
+  @include desktop {
+    padding: 0 6rem;
+  }
 }
 
 .mobile-nav__menu {
-    width: 1.5rem;
-    cursor: pointer;
-    @include tablet {
-        display: none;
-    }
+  width: 1.5rem;
+  cursor: pointer;
+  @include tablet {
+    display: none;
+  }
 }
 
 .nav {
-    background-color: $primary-red;
+  background-color: $primary-red;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 1rem;
+  @include tablet {
+    padding: 0 2rem;
+  }
+  @include desktop {
+    padding: 0 6rem;
+  }
+
+  &__list {
+    list-style: none;
+    padding-left: 0;
+
+    &--left {
+      margin: 0;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      line-height: 20px;
+    }
+
+    &--right {
+      display: none;
+      @include tablet {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 2rem;
+      }
+    }
+  }
+
+  &__link {
     color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 1rem;
-    @include tablet {
-        padding: 0 2rem;
+
+    &--current {
+      @include tablet {
+        border-bottom: 3px solid white;
+        padding-bottom: 13px;
+      }
     }
-    @include desktop {
-        padding: 0 6rem;
+  }
+
+  &__logo {
+    font-size: 2rem;
+    color: white;
+    font-family: "Nova";
+    margin: 0;
+    font-size: 28px;
+
+    &--helvetica {
+      font-family: "Serif";
+      font-size: 20px;
+      margin: 0;
+      align-self: flex-end;
     }
-
-    &__list {
-        list-style: none;
-        padding-left: 0;
-
-        &--left {
-            margin: 0;
-            margin-top: 10px;
-            display: flex;
-            flex-direction: column;
-            line-height: 20px;
-        }
-
-        &--right {
-            display: none;
-            @include tablet {
-                display: flex;
-                justify-content: space-between;
-                column-gap: 2rem;
-            }
-        }
-    }
-
-    &__link {
-        color: white;
-
-        &--current {
-            @include tablet {
-                border-bottom: 3px solid white;
-                padding-bottom: 13px;
-            }
-        }
-    }
-
-    &__logo {
-        font-size: 2rem;
-        color: white;
-        font-family: 'Nova';
-        margin: 0;
-        font-size: 28px;
-
-        &--helvetica {
-            font-family: 'Serif';
-            font-size: 20px;
-            margin: 0;
-            align-self: flex-end;
-        }
-    }
+  }
 }
 
 .mobile-nav {
-    display: none;
-    background-color: #35363a;
+  display: none;
+  background-color: #35363a;
 
-    &__list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    &__item {
-        padding: 1rem 0;
-        width: 90%;
-        text-align: center;
-        border-bottom: 1px solid lightgrey;
-        
-        &:last-child {
-            border: none;
-        }
-    }
+  &__item {
+    padding: 1rem 0;
+    width: 90%;
+    text-align: center;
+    border-bottom: 1px solid lightgrey;
 
-    &__link {
-        color: white;
+    &:last-child {
+      border: none;
     }
+  }
+
+  &__link {
+    color: white;
+  }
 }
 
 .mobile-nav--display {
-    display: block;
-    @include tablet {
-        display: none;
-    }
+  display: block;
+  @include tablet {
+    display: none;
+  }
 }
 
 .top-banner {
-    background: linear-gradient(0deg, #2c2c2c6f, #2c2c2c6f);
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 8rem;
-    @include tablet {
-        height: 10rem;
-    }
-    @include desktop {
-        height: 15rem;
-    }
+  background: linear-gradient(0deg, #2c2c2c6f, #2c2c2c6f);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8rem;
+  @include tablet {
+    height: 10rem;
+  }
+  @include desktop {
+    height: 15rem;
+  }
 
-    &__header {
-        color: white;
-        margin: 0;
-    }
+  &__header {
+    color: white;
+    margin: 0;
+  }
 }
 
 .footer {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 2rem;
+  color: white;
+  background-color: #364259;
+  &__container {
     display: flex;
     flex-direction: column;
-    padding: 3rem 2rem;
-    color: white;
-    background-color: #364259;
-    &__container {
-        display: flex;
-        flex-direction: column;
-        @include tablet {
-            display: flex;
-            justify-content: space-between;
-            flex-direction: row;
-        }
-        @include desktop {
-            padding: 0 6rem;
-        }
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
     }
-
-    &__logo {
-        width: 6rem;
-        height: 3rem;
-        align-self: center;
-        margin: 0 2rem;
-
-        &--school {
-            width: 3rem;
-        }
+    @include desktop {
+      padding: 0 6rem;
     }
+  }
 
-    &__list {
-        padding-left: 0;
-        list-style: none;
-        width: 30%;
-
-        &--logos {
-            margin: 0 auto;
-        }
+  &__text {
+    font-style: italic;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem 0;
+    @include tablet {
+      width: 50%;
     }
+  }
 
-    &__item {
-        margin-top: 1.5rem;
-        min-width: 250px;
-    }
+  &__logo {
+    width: 6rem;
+    height: 3rem;
+    align-self: center;
+    margin: 0 2rem;
 
-    &__link {
-        color: #97e8ff;
+    &--school {
+      width: 3rem;
     }
+  }
+
+  &__list {
+    padding-left: 0;
+    list-style: none;
+    width: 30%;
+
+    &--logos {
+      margin: 0 auto;
+    }
+  }
+
+  &__item {
+    margin-top: 1.5rem;
+    min-width: 250px;
+  }
+
+  &__link {
+    color: #97e8ff;
+  }
 }
