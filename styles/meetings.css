@@ -215,6 +215,18 @@ nav,
     padding: 0 6rem;
   }
 }
+.footer__text {
+  font-style: italic;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+@media (min-width: 768px) {
+  .footer__text {
+    width: 50%;
+  }
+}
 .footer__logo {
   width: 6rem;
   height: 3rem;

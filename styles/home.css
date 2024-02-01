@@ -168,4 +168,20 @@
     width: 50%;
     line-height: 2.5rem;
   }
+}
+
+.project-info {
+  text-align: center;
+  padding: 4rem 0;
+}
+.project-info__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.project-info__link {
+  text-decoration: underline;
 }/*# sourceMappingURL=home.css.map */
